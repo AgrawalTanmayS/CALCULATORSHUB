@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infix to Prefix Converter</title>
+    <link rel="stylesheet" href="prefix.css">
+</head>
+<body>
+
+<div class="header">
+    <button onclick="goToHome()">Home</button>
+    <h1>Infix to Prefix Converter</h1>
+    <div class="calculator-options">
+        <label for="calculatorSelect">Select Calculator:</label>
+        <select id="calculatorSelect" onchange="changeCalculator()">
+            <option value="default">Select</option>
+            <option value="infixToPostfix">Infix to Postfix</option>
+            <option value="prefixEvaluation">Prefix Exaluation</option>
+            <option value="postfixEvaluation">Postfix Evaluation</option>
+        </select>
+    </div>
+</div>
+<!-- <a href="../PRE-EVE/preevel.html"></a> -->
+
+<div class="calculator-container">
+    <h2>Calculator: Infix to Prefix</h2>
+    <!-- Input for infix expression -->
+    <label for="infixInput">Enter Infix Expression:</label>
+    <input type="text" id="infixInput" placeholder="e.g., (A+B)*C">
+
+    <!-- Button to trigger conversion -->
+    <button onclick="convertExpression()">Convert</button>
+
+    <!-- Display converted expression -->
+    <div id="convertedExpression"></div>
+    
+    <!-- Table to display steps -->
+    <table id="conversionTable">
+        <!-- Steps will be dynamically added here -->
+    </table>
+
+    
+</div>
+
+<footer>
+    <p>All rights reserved. © 2024</p>
+</footer>
+
+<script src="prefix.js"></script>
+
+</body>
+</html>

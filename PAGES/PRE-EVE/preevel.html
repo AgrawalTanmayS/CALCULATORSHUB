@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreFix Evaluator</title>
+    <link rel="stylesheet" href="preevel.css">
+</head>
+<body>
+
+<div class="header">
+    <button onclick="goToHome()">Home</button>
+    <h1>PREFIX EVALUATOR</h1>
+    <div class="calculator-options">
+        <label for="calculatorSelect">Select Calculator:</label>
+        <select id="calculatorSelect" onchange="changeCalculator()">
+            <option value="default">Select</option>
+            <option value="infixToPostfix">Infix to Postfix</option>
+            <option value="infixToPrefix">Infix to Prefix</option>
+            <option value="postfixEvaluation">Postfix Evaluation</option>
+        </select>
+    </div>
+</div>
+<a href="/index.html"></a>
+<!-- <a href="../PRE-EVE/preevel.html"></a> -->
+
+<div class="calculator-container">
+    <h2>Evaluator: Prefix</h2>
+    <!-- Input for infix expression -->
+    <label for="prefixInput">Enter PreFix Expression:</label>
+    <input type="text" id="prefixInput" placeholder="e.g., 12+3*">
+
+    <!-- Button to trigger conversion -->
+    <button onclick="evaluateExpression()">Evaluate</button>
+
+    <!-- Display converted expression -->
+    <div id="evaluatedExpression"></div>
+    
+    <!-- Table to display steps -->
+    <table id="evaluationTable">
+        <!-- Steps will be dynamically added here -->
+    </table>
+
+    
+</div>
+
+<footer>
+    <p>All rights reserved. © 2024</p>
+</footer>
+
+<script src="preevel.js"></script>
+
+</body>
+</html>
