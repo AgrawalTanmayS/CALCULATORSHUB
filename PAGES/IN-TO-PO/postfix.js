@@ -1,8 +1,8 @@
 // Function to go to home
-function goToHome() {
-    window.location.href = "/index.html";
-    console.log("Navigating to home screen");
-}
+// function goToHome() {
+//     window.location.href = "/index.html";
+//     console.log("Navigating to home screen");
+// }
 
 // Function to change the calculator type
 function changeCalculator() {
